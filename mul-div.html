@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noraml Calculater</title>
+</head>
+<body>
+
+
+    <h1> SIMPLE CALCULATER </h1><br>
+<form>
+    Number-1 <input type="number" id="n1"><br><br>
+    Number-2 <input type="number" id="n2"><br><br>
+<button onclick="mul()">Multiply</button> <button onclick="div()">Divide</button><br>
+</form>
+<p>The result is: </p><br>
+ <p id="c"> </p>
+    <script>
+    var a,b;
+
+       function mul(){
+       a = document.getElementById('n1').value;
+       b = document.getElementById('n2').value;
+document.getElementById("c").innerHTML = a*b;
+       }
+    
+    function div(){
+        a = document.getElementById('n1').value;
+        b = document.getElementById('n2').value;
+document.getElementById("c").innerHTML = a/b;
+    }
+    </script>
+</body>
+</html>
