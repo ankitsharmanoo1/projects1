@@ -1,0 +1,95 @@
+body{
+ background: linear-gradient(orange,white);
+ overflow-x: hidden;
+}
+.container{
+    /* border: 1px solid black;  */
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding-top: 10px; */
+    overflow: hidden;
+}
+header{
+    /* width: 100%; */
+    height:100px;
+    line-height: 75px;
+    padding:0px 100px;
+    /* position: fixed; */
+    background: black;
+    color: antiquewhite;
+    overflow: hidden;
+}
+header .logo p{
+    /* color: blueviolet; */
+      font-size: 26px;
+      font-weight: bold;
+      float: left;
+      color: antiquewhite;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      cursor: pointer;
+      /* justify-content: center; */
+    }
+
+header ul{
+      float: right;
+}
+header li{
+     display: inline-block;
+     list-style: none;
+     overflow: hidden;
+
+}
+header li a {
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 0px 40px;
+    color:whitesmoke;
+    text-decoration: none;
+
+}
+header li a:hover{
+    color: #e91e63;
+    transition: all 0.4s ease 0s;
+}
+button{
+    width: fit-content;
+    padding: 8px;
+    cursor: pointer;
+    border: 1px solid grey;
+    border-radius: 5px;
+    background: whitesmoke;
+}
+button:hover{
+    background: burlywood;
+    padding-left: 1px;
+}
+
+.message{
+    border: 1px solid lightgray;
+    background: whitesmoke;
+    border-radius: 5px;
+    width: 500px;
+    height: auto;
+    margin: auto;
+    padding: 0 20px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0,0,0.9);
+}
+.message input{
+    width: 90%;
+    padding: 8px 0;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    border-top-left-radius: 0;
+    border-bottom-left-radius:0;
+}
+
+@media (max-width:480px){
+    .message input{
+        width: 82%;
+    }
+}
